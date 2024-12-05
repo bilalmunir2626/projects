@@ -1,0 +1,202 @@
+/* Reset Css */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Css Variables */
+:root{
+    --nav-bar-height:59px;
+}
+
+/* Navbar styling  */
+#nav-bar{
+    display: flex;
+}
+#nav-bar{
+    position: sticky;
+    top: 0px;
+
+}
+#nav-bar::before{
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+
+/* Navbar: logo styling  */
+.logo{
+    margin: -3px 5px;
+}
+
+.logo img{
+    height: 60px;
+    margin: 8px 41px;
+}
+
+/* Nav bar: list styling  */
+#nav-bar ul{
+    display: flex;
+    align-items: center;
+}
+#nav-bar ul li {
+    list-style: none;
+}
+#nav-bar ul li a {
+    display: block;
+    padding: 2px 25px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    font-family: "Fredoka", serif;
+}
+#nav-bar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 590px;
+}
+
+#home p{
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+#home h1{
+    padding: 15px;
+    text-align: center;
+}
+
+#home::before{
+    content: "";
+    background: url(../img/food.jpg) no-repeat center  center/cover;
+    opacity: 0.95;
+    height: 82%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+/* Utility calsses */
+.h-primary{
+    color: white;
+    font-size: 3rem;
+    font-family: "Itim", cursive;
+}
+.btn{
+    padding: 6px 17px;
+    margin: 18px;
+    border: 2px solid white;
+    border-radius: 12px;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+.h-secondary{
+    font-family: "Itim", cursive
+}
+
+.text-center{
+    text-align: center;
+}
+/* Services Section  */
+.h1-primary{
+    font-size: 2.9rem;
+    font-family: "Itim", cursive
+}
+#services{
+    display: flex;
+    margin: 30px;
+}
+#services .box{
+    border: 2px solid brown;
+    margin: 6px;
+    padding: 18px;
+    border-radius: 13px;
+    background-color: #e6e6e6;
+}
+#services img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+/* Clients section  */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.client-items{
+    margin: 19px;
+    padding: 12px;
+}
+.client-items img{
+    height: 140px;
+}
+
+#client-section::before{
+    content: '';
+    background: url(../img/fooddd.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Contact Section  */
+#contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-us form{
+    width: 40%;
+}
+#contact-us label{
+    font-size: 1.3rem;
+}
+#contact-us input,
+#contact-us textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+#contact::before{
+    content: '';
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    background: url(../img/contact.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+/* footer section  */
+footer{
+    background-color: black;
+    color: white;
+    height: 6vh;
+     align-items: center; 
+     display: flex;
+    justify-content: center;
+
+}
